@@ -48,6 +48,7 @@ html, body {
     margin-bottom: 40px;
     margin-top: 0;
     text-transform: uppercase; 
+    position: left;
   }
   
   .btn {
@@ -66,9 +67,10 @@ html, body {
   
   .nav ul {
     height: 80px;
-    list-style: none;
-    margin: 0 auto; 
+    list-style: left;
+    margin: 0; 
     padding: 0;
+    position: left;
   }
   
   .nav ul li {
@@ -76,7 +78,7 @@ html, body {
     display: inline-block; 
     height: 80px;
     line-height: 80px; 
-    list-style: none;
+    list-style: left;
     padding: 0 10px;
     transition: background .5s; 
   }
@@ -97,29 +99,29 @@ html, body {
   }
   
   .jumbotron {
-    background: url(bright\ photo.jpg) center center;
+    background: url(Light\ Blue.jpg) center center;
     background-size: cover;
-    height: 600px; 
+    height: 400px; 
   }
   
   .jumbotron .container {
     position: relative;
-    top: 220px;
+    top: 100px;
   }
   
   .jumbotron h2 {
-    color: #fff;
-    text-align: right; 
+    color: rgb(2, 0, 0);
+    text-align: center; 
   }
   
   .jumbotron p {
-    color: #fff; 
-    text-align: right; 
+    color: rgb(10, 0, 0); 
+    text-align: center; 
   }
   
   .jumbotron .btn {
     margin: 10px 0 0;
-    float: right; 
+    float: left; 
   }
   
   .footer { 

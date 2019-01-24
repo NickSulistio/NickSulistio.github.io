@@ -5,42 +5,41 @@
 <link href="style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
+    <div class="nav">
+        <div class="container">
+          <ul>
+            <a href = "https://www.linkedin.com/in/nickjsulist/" target ="_blank"><li>LinkedIn</li></a>
+            <a href = "https://www.instagram.com/nicksulistio/" target = "_blank"><li>Instagram</li></a>
+            <a href = "https://github.com/NickSulistio" target = "_blank"><li>Github</li></a>
+            <a id="projects"><li>Projects</li></a>
+          </ul>
+        </div>
+   </div>
     <div class="header">
       <div class="container">
         <h1>Nicholas Sulistio</h1>
-        <p>A personal portfolio</p>
-        <a id="learn-more" class="btn" href="#bio">Learn More</a>
-      </div>
-    </div>
-
-    <div class="nav">
-      <div class="container">
-        <ul>
-          <a href = "https://www.linkedin.com/in/nickjsulist/" target ="_blank"><li>LinkedIn</li></a>
-          <a href = "https://www.instagram.com/nicksulistio/" target = "_blank"><li>Instagram</li></a>
-          <a href = "https://github.com/NickSulistio" target = "_blank"><li>Github</li></a>
-          <li>Projects</li>
-        </ul>
+        <p>A personal online portfolio</p>
+        <a id="learn-more" class="btn" >About me</a>
       </div>
     </div>
 
     <div id="bio" class="main">
       <div class="container">
-        <img src="https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/cloud.svg" height="128" width="196">
         <h2>About Me</h2>
-        <p>Hey! My name is Nicholas Sulistio and I'm currently a Freshman studying Computer Science at the University of California, Davis.</p>
-        <p> </p>
-        <p>Learn about the latest research and technologies that you can use immediately to invent the future.</p>
+        <p>Hey! My name is Nicholas Sulistio and I'm currently a Freshman studying Computer Science at the University of California, Davis. I'm from the 626, an awesome area and a home to many Asian-Americans such as myself!</p>
+        <p>At the moment, I am working as a Timbuk2 Brand Ambassador but am looking to pick up a Software Engineer internship in LA this summer.</p>
+        <p>In my free time I enjoy getting boba with friends and playing sports such as badminton! Also, I enjoy creating personal projects such as this website!</p>
       </div>
     </div>
 
     <div class="jumbotron">
       <div class="container">
         <h2>Projects</h2>
-        <p>nicksulistio.github.io</p>
-        <a class="btn" href="#">Join</a>
+        <p><u>nicksulistio.github.io</u></p>
+        <p>...and more soon to come...</p>
       </div>
     </div>
+    
 
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -51,9 +50,9 @@
                     scrollTop: $("#bio").offset().top
                 }, 1000);
             });
-            $("#projects-link").click(function() {
+            $("#projects").click(function() {
                 $('html, body').animate({
-                    scrollTop: $("#projects-block").offset().top
+                    scrollTop: $("#bio").offset().top
                 }, 1000);
             });
     

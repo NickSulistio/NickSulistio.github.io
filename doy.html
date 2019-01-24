@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
+<link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1>Nicholas Sulistio</h1>
+        <p>A personal portfolio</p>
+        <a id="learn-more" class="btn" href="#bio">Learn More</a>
+      </div>
+    </div>
+
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <a href = "https://www.linkedin.com/in/nickjsulist/" target ="_blank"><li>LinkedIn</li></a>
+          <a href = "https://www.instagram.com/nicksulistio/" target = "_blank"><li>Instagram</li></a>
+          <a href = "https://github.com/NickSulistio" target = "_blank"><li>Github</li></a>
+          <li>Projects</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="bio" class="main">
+      <div class="container">
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/cloud.svg" height="128" width="196">
+        <h2>About Me</h2>
+        <p>Hey! My name is Nicholas Sulistio and I'm currently a Freshman studying Computer Science at the University of California, Davis.</p>
+        <p> </p>
+        <p>Learn about the latest research and technologies that you can use immediately to invent the future.</p>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h2>Projects</h2>
+        <p>nicksulistio.github.io</p>
+        <a class="btn" href="#">Join</a>
+      </div>
+    </div>
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+
+            $("#learn-more").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#bio").offset().top
+                }, 1000);
+            });
+            $("#projects-link").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#projects-block").offset().top
+                }, 1000);
+            });
+    
+            $("#contact-link").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#contact-block").offset().top
+                }, 1000);
+            });
+        </script>
+    
+  </body>
+</html>

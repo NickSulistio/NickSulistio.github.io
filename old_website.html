@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+ <title>Welcome!</title>   
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
+<link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="nav">
+        <div class="container">
+          <ul>
+            <a href = "https://www.linkedin.com/in/nickjsulist/" target ="_blank"><li>LinkedIn</li></a>
+            <a href = "https://www.instagram.com/nicksulistio/" target = "_blank"><li>Instagram</li></a>
+            <a href = "https://github.com/NickSulistio" target = "_blank"><li>Github</li></a>
+            <a href = "https://www.docdroid.net/PA14BsS/updated-cs-resume.pdf" target = "_blank"><li>Resume</li></a>
+            <a id="projects"><li>Projects</li></a>
+            <a href ="mailto:NickJSulistio@gmail.com"><li>Contact</li></a>
+          </ul>
+        </div>
+   </div>
+    <div class="header">
+      <div class="container">
+        <h1>Nicholas Sulistio</h1>
+        <p>A personal online portfolio</p>
+        <a id="learn-more" class="btn" >About me</a>
+      </div>
+    </div>
+
+    <div id="bio" class="main">
+      <div class="container">
+            <img src="IMG_1512.JPG" height="200" width="300" class ="rotateimg270">  
+        <h2>About Me</h2>
+        <p>Hey! My name's is Nicholas Sulistio, but you can call me <b>Nick.</b> I'm currently a Freshman studying Computer Science at the University of California, Davis. I'm from the <b>626</b>, an awesome area and a home to many Asian-Americans such as myself!</p>
+        <p>At the moment, I am working as a <b>Timbuk2 Brand Ambassador</b> and a <b>Computer Programmer</b> at the <a href = "https://creativemedia.ucdavis.edu" target ="_blank"><b>Creative Media</b></a> branch of the ASUCD, where we create incredible projects such as <a href = "https://sunsetfest.ucdavis.edu/" target ="_blank"><b>Sunset Fest</b></a>, a student-run music festival. However, I am currently searching for Software Engineering internships in LA this summer.</p>
+        <p>In my free time I enjoy getting boba with friends and playing sports such as badminton! Also, I enjoy creating personal projects such as this website!</p>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h2>Projects</h2>
+        <p><u>nicksulistio.github.io</u></p>
+        <p>...and more soon to come...</p>
+      </div>
+    </div>
+    
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+
+            $("#learn-more").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#bio").offset().top
+                }, 1000);
+            });
+            $("#projects").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#bio").offset().top
+                }, 1000);
+            });
+    
+            $("#contact-link").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#contact-block").offset().top
+                }, 1000);
+            });
+        </script>
+    
+  </body>
+</html>

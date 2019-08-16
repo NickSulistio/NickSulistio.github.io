@@ -7,7 +7,7 @@
 .header {
     text-align: center;
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
-    padding: 180px;
+    padding: 50px;
     background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
@@ -79,7 +79,6 @@ em {
     background-color: black;
     transition: background-color 200ms linear;
   }
-  
 
 .name {
     text-transform: uppercase;
